@@ -6,10 +6,5 @@ block variables
 	- var pageClass= "ui";
 
 block content
-	.container.text-center.pt-75.pb-60
-		h1.mb-55 Заглушка
-		.row
-			.col
-				.ui-card
-					h3.mb-25 Главная страница
-					+test-button("./main.html")
+	include ../sections/header.pug
+	
