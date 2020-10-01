@@ -6,6 +6,7 @@ header.header
             a(href="#").nav-link-item Обо мне
             a(href="#").nav-link-item Акции
             a(href="#").nav-link-item Услуги
+                <i class="fa fa-arrow-down" aria-hidden="true"></i>
             a(href="#").nav-link-item Прайс
             a(href="#").nav-link-item Контакты
         .nav-social
@@ -17,6 +18,21 @@ header.header
                 a(href="https://www.instagram.com/liziliska/?igshid=g3wnz9xmulf7" target='_blank').nav-social-item
                     i(class="fa fa-instagram fa-2x" aria-hidden="true")
             .nav-form
-                button(type='submit') связаться
-    .header-bg
-        img(src="./img/header/main.jpg", alt="")
+                button(type='submit' class='button') Обратная связь
+    .header-title
+        h2 СТУДИЯ ПЕРМАНЕНТНОГО МАКИЯЖА 
+            span LiziLizka lab
+        .table
+            p Перманентный макияж — настоящая находка для Вас, если Вы хотите выглядеть 24 часа в сутки идеально!
+            p Потратив всего 60 минут, вы можете не беспокоиться о внешнем виде более 2 лет!
+            p Перманентный макияж — процедура введения в верхние слои кожи специального пигмента, количество оттенков которого превышает 3 000 000 вариантов!
+    .header-bg.owl-carousel
+        .owl-carousel-item
+            img(src="./img/header/main.jpg", alt="")
+        .owl-carousel-item
+            img(src="./img/header/main-01.jpg", alt="")
+        .owl-carousel-item.margin
+            img(src="./img/header/main-02.jpg", alt="")
+    .header-dots
+        a(href="#")
+            <i class="fa fa-arrow-down fa-4x" aria-hidden="true"></i>

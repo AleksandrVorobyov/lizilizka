@@ -1,9 +1,17 @@
 .header {
   position: relative;
+  margin-bottom: 10px;
 
   // @media (min-width: 992px) {
   //     width: 400px;
   // }
+}
+
+.header .owl-carousel .owl-carousel-item img {
+  height: 1000px;
+  @media (min-width: 1440px) {
+    height: 1100px;
+  }
 }
 
 .nav {
@@ -16,6 +24,7 @@
   width: 100%;
   padding: 0px 30px;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
 }
 
 .nav-logo {
@@ -49,7 +58,7 @@
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 40px;
   transition: 0.5s ease-in;
 
   &:before {
@@ -59,6 +68,7 @@
     background-color: transparent;
     height: 3px;
     width: 100%;
+    transition: 0.5s ease-in;
   }
 
   &:last-child {
@@ -71,6 +81,12 @@
     &:before {
       background-color: #c13584;
     }
+  }
+  i {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - (18px / 2));
+    margin: auto;
   }
 }
 
@@ -91,19 +107,6 @@
   &:last-child {
     margin-right: 0;
   }
-}
-
-.nav-form button {
-  font-style: 22px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.7);
-  border: 2px solid rgb(255, 255, 255);
-  padding: 10px 20px;
-  cursor: pointer;
 }
 
 .fa-vk {
@@ -127,5 +130,63 @@
   color: white;
   &:hover {
     color: #c13584;
+  }
+}
+
+.header-title {
+  position: absolute;
+  z-index: 3;
+  top: calc(30% - (120px / 2));
+  right: calc(50% - (980px / 2));
+  width: 980px;
+  text-align: center;
+}
+
+.header-title h2 {
+  margin-bottom: 100px;
+  font-size: 42px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #c13584;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px #57203f;
+
+  span {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 46px;
+    text-transform: uppercase;
+  }
+}
+
+.table {
+  padding: 20px 10px;
+  border: 1px solid #c13584;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.table p {
+  font-size: 26px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #c13584;
+}
+
+.header-bg {
+}
+
+.margin {
+  margin-right: -20px;
+}
+
+.header-dots {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - (60px / 2));
+  z-index: 6;
+  animation: arrows 2s linear 0s infinite alternate;
+  a {
+    color: #fff;
   }
 }

@@ -1,0 +1,55 @@
+@keyframes arrows {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes border-button {
+  0% {
+    border-color: #fff;
+    color: #c13584;
+    // box-shadow: 10px 10px 20px #fff;
+  }
+
+  50% {
+    border-color: #cc7fab;
+    box-shadow: 0px 0px 0px #cc7fab;
+  }
+
+  100% {
+    border-color: #c13584;
+    box-shadow: -10px -10px 20px #c13584;
+  }
+}
+
+@keyframes shadow-card-odd {
+  0% {
+    box-shadow: -10px 0px 20px #c13584;
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px #cc7fab;
+  }
+
+  100% {
+    box-shadow: 10px 10px 20px #c13584;
+  }
+}
+
+@keyframes shadow-card-even {
+  0% {
+    box-shadow: 10px 10px 20px #c13584;
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px #cc7fab;
+  }
+
+  100% {
+    box-shadow: -10px -10px 20px #c13584;
+  }
+}
