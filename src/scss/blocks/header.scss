@@ -1,10 +1,6 @@
 .header {
   position: relative;
   margin-bottom: 10px;
-
-  // @media (min-width: 992px) {
-  //     width: 400px;
-  // }
 }
 
 .header .owl-carousel .owl-carousel-item img {
@@ -23,7 +19,7 @@
   left: 0;
   width: 100%;
   padding: 0px 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #000000b3;
   z-index: 5;
 }
 
@@ -184,7 +180,7 @@
   position: absolute;
   bottom: 0;
   left: calc(50% - (60px / 2));
-  z-index: 6;
+  z-index: 3;
   animation: arrows 2s linear 0s infinite alternate;
   a {
     color: #fff;

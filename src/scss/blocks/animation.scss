@@ -53,3 +53,18 @@
     box-shadow: -10px -10px 20px #c13584;
   }
 }
+
+@keyframes anim-ramka-avatar {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes anim-ramka-contact {
+  0%, 100% {
+      clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+  }
+  50% {
+      clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+  }
+}
