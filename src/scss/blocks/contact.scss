@@ -114,3 +114,13 @@
 .anim-ramka-contact:hover:after {
     animation-duration: 2s;
 }
+
+.anim-ramka-contact a {
+    animation: white-black 5s linear 0s infinite alternate;
+    transition: 2s linear;
+
+    &:hover {
+        animation-play-state: paused;
+        color: #fff !important;
+    }
+}

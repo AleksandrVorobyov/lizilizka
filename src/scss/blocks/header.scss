@@ -1,6 +1,7 @@
 .header {
   position: relative;
   margin-bottom: 10px;
+  height: 1100px;
 }
 
 .header .owl-carousel .owl-carousel-item img {
@@ -195,7 +196,7 @@
   font-weight: 600;
   color: #c13584;
   line-height: 1.4;
-  text-shadow: 1px 1px 2px #57203f;
+  text-shadow: 10px 10px 20px #57203f;
 
   span {
     font-family: "Playfair Display", serif;
@@ -215,24 +216,29 @@
   font-size: 26px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
   color: #c13584;
-}
-
-.header-bg {
-}
-
-.margin {
-  margin-right: -20px;
 }
 
 .header-dots {
   position: absolute;
-  bottom: 0;
-  left: calc(50% - (60px / 2));
+  bottom: 0px;
+  left: calc(50% - (75px / 2));
   z-index: 3;
   animation: arrows 2s linear 0s infinite alternate;
   a {
     color: #fff;
+  }
+
+  @media (min-width: 1140px) {
+    a {
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  @media (min-width: 2170px) {
+    a {
+      color: #fff;
+    }
   }
 }

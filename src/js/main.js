@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".owl-carousel-header").owlCarousel({
         items: 3,
         loop: false,
         nav: false,
@@ -10,7 +10,6 @@ $(document).ready(function(){
             },
             1440: {
                 items: 2,
-
             },
             2170: {
                 items: 3
@@ -19,5 +18,35 @@ $(document).ready(function(){
         stagePadding: 0,
         arrows: false,
         margin: 10,
+        mouseDrag : false,
+        touchDrag : false
+    });
+  });
+
+$(document).ready(function(){
+    $(".owl-carousel-brow").owlCarousel({
+        items: 1,
+        loop: false,
+        nav: true,
+        navText: ["Назад", "Вперед"],
+        dots: false,
+        stagePadding: 0,
+        arrows: false,
+        margin: 10,
+        autoWidth: false
+    });
+  });
+
+$(document).ready(function(){
+    $(".owl-carousel-lips").owlCarousel({
+        items: 2,
+        loop: false,
+        nav: true,
+        navText: ["Назад", "Вперед"],
+        dots: false,
+        stagePadding: 0,
+        arrows: false,
+        margin: 10,
+        autoWidth: false
     });
   });
