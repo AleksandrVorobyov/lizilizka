@@ -4,7 +4,11 @@
 }
 
 .header .owl-carousel .owl-carousel-item img {
-  height: 1000px;
+  height: 1500px;
+
+  @media (min-width: 1250px) {
+    height: 1000px;
+  }
   @media (min-width: 1440px) {
     height: 1100px;
   }
@@ -34,13 +38,14 @@
 }
 
 .nav-logo {
-  max-width: 200px;
+  max-width: 370px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: 1250px) {
     margin-left: 0;
+    max-width: 200px;
     margin-right: 0;
   }
 }
@@ -49,7 +54,7 @@
   color: #ffffff;
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 32px;
+  font-size: 70px;
   font-weight: 600;
   line-height: 1.1;
   text-transform: uppercase;
@@ -58,6 +63,10 @@
 
   &:hover {
     color: #c13584;
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 32px;
   }
 }
 
@@ -76,7 +85,7 @@
   padding: 45px 0;
   display: inline-block;
   position: relative;
-  font-size: 18px;
+  font-size: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
@@ -106,11 +115,16 @@
       background-color: #c13584;
     }
   }
+
   i {
     position: absolute;
     bottom: 20px;
     left: calc(50% - (18px / 2));
     margin: auto;
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 18px;
   }
 }
 
@@ -206,15 +220,19 @@
 .header-title {
   position: absolute;
   z-index: 3;
-  top: calc(30% - (120px / 2));
+  top: calc(30% - (50px / 2));
   right: calc(50% - (980px / 2));
   width: 980px;
   text-align: center;
+
+  @media (min-width: 1440px) {
+    top: calc(30% - (120px / 2));
+  }
 }
 
 .header-title h2 {
   margin-bottom: 100px;
-  font-size: 42px;
+  font-size: 52px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #c13584;
@@ -227,6 +245,10 @@
     font-size: 46px;
     text-transform: uppercase;
   }
+
+  @media (min-width: 1250px) {
+    font-size: 42px;
+  }
 }
 
 .table {
@@ -236,17 +258,21 @@
 }
 
 .table p {
-  font-size: 26px;
+  font-size: 33px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 500;
   color: #c13584;
+
+  @media (min-width: 1250px) {
+    font-size: 26px;
+  }
 }
 
 .header-dots {
   position: absolute;
   left: calc(50% - (75px / 2));
-  bottom: 100px;
+  bottom: 10px;
   z-index: 3;
   animation: arrows 2s linear 0s infinite alternate;
   a {
@@ -267,5 +293,20 @@
     a {
       color: #fff;
     }
+  }
+}
+
+.nav-form .button {
+  font-size: 23px;
+  @media (min-width: 1250px) {
+    font-size: 18px;
+  }
+}
+
+.social .fa-2x {
+  font-size: 3em;
+
+  @media (min-width: 1250px) {
+    font-size: 2em;
   }
 }
