@@ -2,11 +2,17 @@
   position: relative;
   margin-bottom: 10px;
   background: linear-gradient(to left, #00000075, #0000003d),
-    url("../img/stocks/01.jpg");
-  height: 1080px;
+    url("../img/stocks/02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1500px;
   width: 100%;
   padding: 120px 0;
   z-index: 2;
+
+  @media (min-width: 1250px) {
+    height: 1080px;
+  }
 }
 
 .action-title {
@@ -17,7 +23,6 @@
 .action-wrap {
   display: flex;
   flex-direction: column;
-
 
   @media (min-width: 1545px) {
     justify-content: space-between;
@@ -36,13 +41,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 1100px;
+  max-width: 1200px;
   background-color: #000000b3;
   margin-bottom: 50px;
-  padding: 10px 10px 10px 25px;
+  padding: 20px 10px 20px 25px;
 
   @media (min-width: 1250px) {
     max-width: 900px;
+    padding: 10px 10px 10px 25px;
   }
 }
 
@@ -64,7 +70,7 @@
 }
 
 .action__item-info {
-  max-width: 800px;
+  max-width: 900px;
 
   @media (min-width: 1250px) {
     max-width: 600px;
@@ -73,9 +79,9 @@
 
 .action__item-info ul,
 .action__item-info li {
-  line-height: 1.2;
+  line-height: 1.1;
   list-style-type: none;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #c13584;
@@ -83,6 +89,7 @@
   letter-spacing: 1.2px;
 
   @media (min-width: 1250px) {
+    line-height: 1.2;
     font-size: 18px;
   }
 }
@@ -92,5 +99,6 @@
 
   @media (min-width: 1545px) {
     display: block;
+    margin-top: 135px;
   }
 }
