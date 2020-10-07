@@ -11,10 +11,14 @@
 
 .labor-subtitle {
   text-align: center;
-  font-size: 28px;
+  font-size: 38px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #c13584;
+
+  @media (min-width: 1250px) {
+    font-size: 28px;
+  }
 }
 
 .labour-card {
@@ -35,7 +39,7 @@
   display: inline-block;
   padding: 10px 10px 15px;
   background-color: #fff;
-  width: 440px;
+  width: 480px;
   margin-right: 50px;
   margin-bottom: 50px;
   z-index: 3;
@@ -55,6 +59,10 @@
     }
   }
 
+  @media (min-width: 1250px) {
+    width: 440px;
+  }
+
   &:nth-child(odd) {
     animation: shadow-card-odd 5s linear 0s infinite alternate;
   }
@@ -69,9 +77,13 @@
 }
 
 .card-img img {
-  height: 400px;
+  height: 440px;
   width: 100%;
   overflow: hidden;
+
+  @media (min-width: 1250px) {
+    height: 400px;
+  }
 }
 
 .card-info {

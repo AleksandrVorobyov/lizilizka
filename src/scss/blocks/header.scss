@@ -21,7 +21,7 @@
   margin-right: auto;
   justify-content: center;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -34,6 +34,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
+    position: fixed;
   }
 }
 
@@ -221,9 +222,14 @@
   position: absolute;
   z-index: 3;
   top: calc(30% - (50px / 2));
-  right: calc(50% - (980px / 2));
-  width: 980px;
+  right: calc(50% - (1050px / 2));
+  width: 1050px;
   text-align: center;
+
+  @media (min-width: 1250px) {
+    right: calc(50% - (980px / 2));
+    width: 980px;
+  }
 
   @media (min-width: 1440px) {
     top: calc(30% - (120px / 2));
@@ -232,12 +238,12 @@
 
 .header-title h2 {
   margin-bottom: 100px;
-  font-size: 52px;
+  font-size: 56px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #c13584;
   line-height: 1.4;
-  text-shadow: 10px 10px 20px #57203f;
+  text-shadow: 2px 2px 3px #000;
 
   span {
     font-family: "Playfair Display", serif;
@@ -258,7 +264,7 @@
 }
 
 .table p {
-  font-size: 33px;
+  font-size: 38px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 500;
@@ -308,5 +314,15 @@
 
   @media (min-width: 1250px) {
     font-size: 2em;
+  }
+}
+
+body .Widget__button {
+  height: 60px !important;
+  padding: 25px !important;
+  width: 60px !important;
+  @media (min-width: 1250px) {
+    height: 36px;
+    padding: 14px;
   }
 }

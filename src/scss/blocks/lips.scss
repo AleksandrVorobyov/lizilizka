@@ -19,18 +19,26 @@
 
 .lips__text p,
 li {
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   color: #000000;
+
+  @media (min-width: 1250px) {
+    font-size: 18px;
+  }
 }
 
 .lips__text span {
-  font-size: 20px;
+  font-size: 26px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 1250px) {
+    font-size: 20px;
+  }
 }
 
 .lips__text li:first-child {

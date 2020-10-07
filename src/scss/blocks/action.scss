@@ -36,10 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 900px;
+  max-width: 1100px;
   background-color: #000000b3;
   margin-bottom: 50px;
   padding: 10px 10px 10px 25px;
+
+  @media (min-width: 1250px) {
+    max-width: 900px;
+  }
 }
 
 .action__item-svg {
@@ -60,19 +64,27 @@
 }
 
 .action__item-info {
-  max-width: 600px;
+  max-width: 800px;
+
+  @media (min-width: 1250px) {
+    max-width: 600px;
+  }
 }
 
 .action__item-info ul,
 .action__item-info li {
   line-height: 1.2;
   list-style-type: none;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #c13584;
   margin-bottom: 15px;
   letter-spacing: 1.2px;
+
+  @media (min-width: 1250px) {
+    font-size: 18px;
+  }
 }
 
 .action-bg-img {
