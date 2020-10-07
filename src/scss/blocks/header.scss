@@ -1,7 +1,6 @@
 .header {
   position: relative;
   margin-bottom: 10px;
-  height: 1100px;
 }
 
 .header .owl-carousel .owl-carousel-item img {
@@ -13,20 +12,37 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0px 30px;
+  padding: 15px 30px;
   background-color: #000000b3;
   z-index: 5;
+
+  @media (min-width: 1250px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
 }
 
 .nav-logo {
   max-width: 200px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1250px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .nav-logo a {
@@ -47,6 +63,13 @@
 
 .nav-link {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1250px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .nav-link-item {
@@ -222,8 +245,8 @@
 
 .header-dots {
   position: absolute;
-  bottom: 0px;
   left: calc(50% - (75px / 2));
+  bottom: 100px;
   z-index: 3;
   animation: arrows 2s linear 0s infinite alternate;
   a {
@@ -234,6 +257,10 @@
     a {
       color: rgb(0, 0, 0);
     }
+  }
+
+  @media (min-width: 1440px) {
+    bottom: 0px;
   }
 
   @media (min-width: 2170px) {

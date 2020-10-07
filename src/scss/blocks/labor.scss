@@ -22,6 +22,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+
+
+  @media (min-width: 1520px) {
+    justify-content: center;
+  }
 }
 
 .card {
@@ -36,8 +42,17 @@
   cursor: pointer;
   transition: .4s linear;
 
-  &:nth-child(3n + 3) {
+  &:nth-child(2n + 2) {
     margin-right: 0;
+  }
+
+  @media (min-width: 1520px) {
+    &:nth-child(3n + 3) {
+      margin-right: 0 !important;
+    }
+    &:nth-child(2n + 2) {
+      margin-right: 50px;
+    }
   }
 
   &:nth-child(odd) {

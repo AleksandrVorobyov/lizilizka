@@ -17,7 +17,14 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1200px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .brow-wrap::after {
@@ -27,13 +34,12 @@
   left: 380px;
   background-image: url("../img/brow/01.png");
   background-repeat: no-repeat;
-  width: 100%;
+  width: 600px;
   height: 500px;
 }
 
 .brow__text {
-  max-width: 40%;
-  margin-right: 50px;
+  margin-top: 50px;
 
   P {
     font-size: 18px;
@@ -42,53 +48,14 @@
     font-weight: 400;
     color: #000000;
   }
-}
 
-.brow__carousel {
-  max-width: 50%;
-  height: 100%;
-  position: relative;
-}
-
-.owl-carousel-item-brow {
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
-  margin-bottom: 10px;
-
-  img {
-    height: 355px;
+  @media (min-width: 1200px) {
+    margin-right: 50px;
+    max-width: 40%;
+    margin-top: 0;
   }
 }
 
-.owl-carousel-brow.owl-carousel .owl-nav, .owl-carousel-lips.owl-carousel .owl-nav {
-  display: flex;
-  justify-content: center;
+.lips__carousel .owl-carousel-lips.owl-carousel .owl-nav .owl-prev {
+  margin-left: 10px;
 }
-
-.owl-carousel-brow.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel-brow.owl-carousel .owl-nav button.owl-next,
-.owl-carousel-lips.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel-lips.owl-carousel .owl-nav button.owl-next {
-  width: 130px;
-  height: 50px;
-  border: 2px solid black;
-  background-color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  color: #000;
-  margin-right: 10px;
-  transition: 0.3s linear;
-
-  &:hover {
-    background-color: #000000b3;
-    color: #c13584;
-  }
-}
-
-

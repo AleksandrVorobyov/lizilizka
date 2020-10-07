@@ -38,6 +38,20 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
+    $(".owl-carousel-milesnick").owlCarousel({
+        items: 1,
+        loop: false,
+        nav: true,
+        navText: ["Назад", "Вперед"],
+        dots: false,
+        stagePadding: 0,
+        arrows: false,
+        margin: 10,
+        // autoWidth: true
+    });
+  });
+
+$(document).ready(function(){
     $(".owl-carousel-lips").owlCarousel({
         items: 2,
         loop: false,

@@ -2,6 +2,8 @@
     position: relative;
     background-color: #e8dff0;
     margin-bottom: 10px;
+    width: 100%;
+
 }
 
 .contact-wrapper {
@@ -15,7 +17,15 @@
 
 .contact-wrap  {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1520px) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .contact__form {
@@ -122,5 +132,19 @@
     &:hover {
         animation-play-state: paused;
         color: #fff !important;
+    }
+}
+
+.contact__map {
+    width: 720px;
+    height: 480px;
+    background-image: url('../img/contact/02.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    
+    @media (min-width: 1520px) {
+        margin-bottom: 0;
     }
 }

@@ -16,24 +16,18 @@
 .milesnick-wrap {
   position: relative;
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+
+  @media (min-width: 1250px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
-.milesnick__carousel {
-  max-width: 35%;
-  height: 100%;
-  position: relative;
-  margin-right: 50px;
-}
-
-.milesnick__carousel
-  .owl-carousel-brow.owl-carousel
-  .owl-carousel-item-brow
-  img {
-  height: 455px;
-  width: 100% !important;
-}
 
 .milesnick__text p,
 li {
@@ -41,6 +35,10 @@ li {
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   color: #000000;
+}
+
+.milesnick__text p {
+  margin-top: 0;
 }
 
 .milesnick__text span {
@@ -52,8 +50,8 @@ li {
 }
 
 .milesnick__text li:first-child {
-    font-weight: 700;
-    list-style-type: none;
+  font-weight: 700;
+  list-style-type: none;
 }
 
 .milesnick__text li {
