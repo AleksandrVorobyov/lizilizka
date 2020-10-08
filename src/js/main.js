@@ -64,13 +64,30 @@ $(document).ready(function () {
   });
 });
 
-// var formButton = document.querySelector('.nav-form');
-// var formPosht = document.querySelector('.FeedbackForm__trigger');
+var formButton = document.querySelector('.nav-form');
+var formPosht = document.querySelector('#form');
+var formExit =document.querySelector("#formExit");
 
-// formButton.addEventListener("click", function() {
-//   unlockForm();
+formButton.addEventListener("click", function() {
+  unlockForm();
+});
+
+function unlockForm() {
+  formPosht.style.display="block";
+}
+
+// function unlockForm(e) {
+//   if (e.classList.contains('display-none')) {
+//     e.classList.remove("display-none");
+//   } else {
+//     e.classList.add("display-none");
+//   }
+// }
+
+// formButtonExit.addEventListener("click", function() {
+//   exitForm();
 // });
 
-// function unlockForm() {
-//   formPosht.click;
+// function exitForm() {
+//   formPosht.style.display="none";
 // }
