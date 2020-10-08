@@ -64,4 +64,13 @@ $(document).ready(function () {
   });
 });
 
+// var formButton = document.querySelector('.nav-form');
+// var formPosht = document.querySelector('.FeedbackForm__trigger');
 
+// formButton.addEventListener("click", function() {
+//   unlockForm();
+// });
+
+// function unlockForm() {
+//   formPosht.click;
+// }

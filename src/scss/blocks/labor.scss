@@ -28,7 +28,6 @@
   align-items: center;
   justify-content: center;
 
-
   @media (min-width: 1520px) {
     justify-content: center;
   }
@@ -44,7 +43,7 @@
   margin-bottom: 50px;
   z-index: 3;
   cursor: pointer;
-  transition: .4s linear;
+  transition: 0.4s linear;
 
   &:nth-child(2n + 2) {
     margin-right: 0;
@@ -80,6 +79,7 @@
   height: 460px;
   width: 100%;
   overflow: hidden;
+  transition: 0.4s linear;
 
   @media (min-width: 1250px) {
     height: 400px;

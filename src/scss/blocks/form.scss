@@ -1,0 +1,100 @@
+.form {
+  position: relative;
+  display: none;
+  background-color: #000000ab;
+  z-index: 10;
+}
+
+.form-wrapper {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-border {
+  background-color: #000000ab;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.form-title {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #c13584;
+  line-height: 1.4;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+}
+
+.form-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrap input {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: #c13584;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-wrap input::placeholder {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-wrap input:focus::placeholder {
+  color: #fff;
+}
+
+.form-wrap textarea {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: #c13584;
+  border-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.form-wrap textarea::placeholder {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: .4s linear;
+
+    i:hover {
+        color: #c13584;
+    }
+}
