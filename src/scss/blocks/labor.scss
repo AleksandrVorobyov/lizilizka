@@ -39,7 +39,7 @@
   display: inline-block;
   padding: 10px 10px 15px;
   background-color: #fff;
-  width: 480px;
+  width: 500px;
   margin-right: 50px;
   margin-bottom: 50px;
   z-index: 3;
@@ -77,7 +77,7 @@
 }
 
 .card-img img {
-  height: 440px;
+  height: 460px;
   width: 100%;
   overflow: hidden;
 
@@ -94,15 +94,23 @@
 }
 
 .card-meta {
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #c13584;
+
+  @media (min-width: 1250px) {
+    font-size: 24px;
+  }
 }
 
 .card-price {
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: 1250px) {
+    font-size: 24px;
+  }
 }

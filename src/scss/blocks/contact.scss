@@ -1,150 +1,194 @@
 .contact {
-    position: relative;
-    background-color: #e8dff0;
-    margin-bottom: 10px;
-    width: 100%;
-
+  position: relative;
+  background-color: #e8dff0;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .contact-wrapper {
-    background-color: #e8dff0;
-    padding: 50px 30px;
+  background-color: #e8dff0;
+  padding: 50px 30px;
 }
 
 .contact__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-.contact-wrap  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contact-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    @media (min-width: 1520px) {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
+  @media (min-width: 1520px) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .contact__form {
-    position: relative;
+  position: relative;
+  height: 580px;
+  width: 500px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/contact/01.png");
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 400px;
+    z-index: 2;
+  }
+
+  @media (min-width: 1250px) {
     height: 480px;
     width: 400px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 3;
-
-    &::before {
-        position: absolute;
-        content: "";
-        background-image: url("../img/contact/01.png");
-        top: 0;
-        left: -300px;
-        width: 300px;
-        height: 400px;
-        z-index: 2;
-    }
+  }
 }
 
 .contact__form-border {
-    padding: 20px;
-    background-color: #fff;
-    height: 100%;
-    border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .contact__form-title {
-    text-align: center;
+  text-align: center;
+  font-size: 33px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #c13584;
+  margin-bottom: 40px;
+
+  @media (min-width: 1250px) {
     font-size: 24px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    color: #c13584;
-    margin-bottom: 40px;
+  }
 }
 
-.contact__form-border p, a{
-    text-align: center;
+.contact__form-border p,
+a {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #c13584;
+  transition: 0.4s ease-in;
+  text-align: left;
+
+  @media (min-width: 1250px) {
     font-size: 20px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    color: #c13584;
-    transition: .4s ease-in;
-    text-align: left;
+  }
 }
 
-.contact__form-border a, .anim-ramka-contact a{
-    color: #000000;
+.contact__form-border a,
+.anim-ramka-contact a {
+  color: #000000;
 }
 
 .contact__form-border a:hover {
-    color: #e8dff0;
+  color: #e8dff0;
 }
 
-.anim-ramka-contact{
-    z-index: 4;
-    width: 100px; 
-    height: 100px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    margin: 60px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    font-size: 24px;
-    font-family: 'Roboto Condensed', sans-serif; 
-    box-shadow: inset 6px 6px 8px 0 rgba(0,0,0,0.4);
+.anim-ramka-contact {
+  z-index: 4;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  box-shadow: inset 6px 6px 8px 0 rgba(0, 0, 0, 0.4);
 }
-.anim-ramka-contact:after, 
+.anim-ramka-contact:after,
 .anim-ramka-contact:before {
-    mix-blend-mode:multiply;
-    filter:none;
-    z-index: -1;
-    content:'';
-    width: calc(100% + 90px);
-    height: calc(100% + 90px);
-    position: absolute;
-    animation: anim-ramka-contact 8s ease-in-out infinite;
+  mix-blend-mode: multiply;
+  filter: none;
+  z-index: -1;
+  content: "";
+  width: calc(100% + 90px);
+  height: calc(100% + 90px);
+  position: absolute;
+  animation: anim-ramka-contact 8s ease-in-out infinite;
 }
 
-.anim-ramka-contact:after{
-    animation-delay: -5s;
-    background-color: #e8dff0;
-    clip-path: polygon(0 0, calc(100% - (33px)) calc(0% + (33px)), 100% 100%, calc(0% + (33px)) calc(100% - (33px)));
+.anim-ramka-contact:after {
+  animation-delay: -5s;
+  background-color: #e8dff0;
+  clip-path: polygon(
+    0 0,
+    calc(100% - (33px)) calc(0% + (33px)),
+    100% 100%,
+    calc(0% + (33px)) calc(100% - (33px))
+  );
 }
 .anim-ramka-contact:before {
-    background-color: #c13584;
-    clip-path: polygon(calc(0% + (33px)) calc(0% + (33px)), 100% 0, calc(100% - (33px)) calc(100% - (33px)), 0 100%);
+  background-color: #c13584;
+  clip-path: polygon(
+    calc(0% + (33px)) calc(0% + (33px)),
+    100% 0,
+    calc(100% - (33px)) calc(100% - (33px)),
+    0 100%
+  );
 }
-.anim-ramka-contact:hover:after{
-    animation-delay: 1s;
-}
-.anim-ramka-contact:hover:before, 
 .anim-ramka-contact:hover:after {
-    animation-duration: 2s;
+  animation-delay: 1s;
+}
+.anim-ramka-contact:hover:before,
+.anim-ramka-contact:hover:after {
+  animation-duration: 2s;
 }
 
 .anim-ramka-contact a {
-    animation: white-black 5s linear 0s infinite alternate;
-    transition: 2s linear;
+  animation: white-black 5s linear 0s infinite alternate;
+  transition: 2s linear;
 
-    &:hover {
-        animation-play-state: paused;
-        color: #fff !important;
-    }
+  &:hover {
+    animation-play-state: paused;
+    color: #fff !important;
+  }
 }
 
 .contact__map {
+  width: 920px;
+  height: 650px;
+  background-image: url("../img/contact/02.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+
+  @media (min-width: 1520px) {
+    margin-bottom: 0;
+  }
+  @media (min-width: 1250px) {
     width: 720px;
     height: 480px;
-    background-image: url('../img/contact/02.png');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 50px;
-    
-    @media (min-width: 1520px) {
-        margin-bottom: 0;
-    }
+  }
+}
+
+.contact__map-mini {
+  display: none;
+
+  @media (min-width: 1250px) {
+    display: block;
+  }
+}
+
+.contact__map-big {
+  display: block;
+
+  @media (min-width: 1250px) {
+    display: none;
+  }
 }

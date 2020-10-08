@@ -16,11 +16,16 @@
 
 .about-me__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+
+  @media (min-width: 1250px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .about-me__content-text {
-  max-width: 550px;
+  max-width: 100%;
 
   @media (min-width: 1250px) {
     max-width: 500px;
@@ -28,7 +33,7 @@
 }
 
 .about-me__content-text p {
-  font-size: 24px;
+  font-size: 33px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 400;
@@ -40,21 +45,32 @@
 }
 
 .about-me__content-text span {
-  font-size: 18px;
+  font-size: 33px;
   font-family: "Playfair Display", serif;
   line-height: 1.2;
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 1250px) {
+    font-size: 18px;
+  }
 }
 
 .about-me__img {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1250px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .about-me__img-content {
-  height: 450px;
-  width: 450px;
+  height: 550px;
+  width: 550px;
   background-position: top;
   box-shadow: inset 6px 6px 8px 0 rgba(0, 0, 0, 0.4);
   z-index: 5;
@@ -63,12 +79,12 @@
   z-index: 2;
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 80px;
+  margin-bottom: 30px;
 
   @media (min-width: 1250px) {
     height: 400px;
     width: 400px;
-    margin-top: 0;
+    margin-bottom: 0;
   }
 
   img {
@@ -80,7 +96,7 @@
 }
 
 .about-me__content .button {
-    font-size: 26px;
+    font-size: 40px;
     @media (min-width: 1250px) {
     font-size: 18px;
   }
@@ -118,14 +134,15 @@
 .about-me__img-flowers img {
   position: absolute;
   content: "";
-  top: 50px;
-  right: 110px;
+  top: 165px;
+  right: 185px;
   width: 600px;
   height: 450px;
   z-index: 1;
 
   @media (min-width: 1250px) {
     top: 0px;
+    right: 110px;
   }
 }
 
