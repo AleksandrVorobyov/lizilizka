@@ -29,13 +29,18 @@
 
 .brow-wrap::after {
   position: absolute;
+  display: none;
   content: "";
-  top: -15px;
+  top: -50px;
   left: 380px;
   background-image: url("../img/brow/01.png");
   background-repeat: no-repeat;
   width: 600px;
   height: 500px;
+
+  @media (min-width: 1250px) {
+    display: block;
+  }
 }
 
 .brow__text {
@@ -60,6 +65,4 @@
   }
 }
 
-.lips__carousel .owl-carousel-lips.owl-carousel .owl-nav .owl-prev {
-  margin-left: 10px;
-}
+

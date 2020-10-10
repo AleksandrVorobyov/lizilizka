@@ -48,6 +48,8 @@ $(document).ready(function () {
     stagePadding: 0,
     arrows: false,
     margin: 10,
+    autoWidth:true,
+    autoHeight:true
   });
 });
 
