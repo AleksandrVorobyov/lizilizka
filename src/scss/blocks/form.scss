@@ -38,23 +38,39 @@
 }
 
 .form-wrap input {
+  display: inline-block;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
   border: none;
   background-color: #c13584;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
   outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s linear;
+
+  &:hover {
+    background-color: #cf5d9e;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 23px;
+  }
 }
 
 .form-wrap input::placeholder {
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
+
+  @media (min-width: 1250px) {
+    font-size: 23px;
+  }
 }
 
 .form-wrap input:focus::placeholder {
@@ -62,8 +78,9 @@
 }
 
 .form-wrap textarea {
+  display: inline-block;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
@@ -72,28 +89,47 @@
   border-radius: 10px;
   padding: 10px;
   outline: none;
+  border: 1px solid transparent;
+  transition: 0.4s linear;
+
+  &:hover {
+    background-color: #cf5d9e;
+    border: 1px solid rgb(0, 0, 0);
+  }
+
+  @media (min-width: 1250px) {
+    font-size: 23px;
+  }
 }
 
 .form-wrap textarea::placeholder {
-  font-size: 25px;
+  font-size: 27px;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
+
+  @media (min-width: 1250px) {
+    font-size: 23px;
+  }
 }
 
 .form-submit {
   display: flex;
   justify-content: space-between;
+
+  input {
+    cursor: pointer;
+  }
 }
 
 .form-exit {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    transition: .4s linear;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
 
-    i:hover {
-        color: #c13584;
-    }
+  i:hover {
+    color: #c13584;
+  }
 }

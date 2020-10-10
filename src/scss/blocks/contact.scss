@@ -79,7 +79,7 @@ a {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #c13584;
-  transition: 0.4s ease-in;
+  transition: 0.4s linear;
   text-align: left;
 
   @media (min-width: 1250px) {
@@ -88,12 +88,14 @@ a {
 }
 
 .contact__form-border a,
-.anim-ramka-contact a {
+.anim-ramka-contact span {
   color: #000000;
 }
 
+.contact__form-border span:hover,
 .contact__form-border a:hover {
   color: #e8dff0;
+  text-decoration: underline;
 }
 
 .anim-ramka-contact {
@@ -109,6 +111,7 @@ a {
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
   box-shadow: inset 6px 6px 8px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .anim-ramka-contact:after,
 .anim-ramka-contact:before {
@@ -149,13 +152,13 @@ a {
   animation-duration: 2s;
 }
 
-.anim-ramka-contact a {
+.anim-ramka-contact span {
   animation: white-black 5s linear 0s infinite alternate;
   transition: 2s linear;
 
   &:hover {
     animation-play-state: paused;
-    color: #fff !important;
+    color: rgb(255, 255, 255) !important;
   }
 }
 

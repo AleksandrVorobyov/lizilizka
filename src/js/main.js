@@ -7,6 +7,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        slideBy: 2
       },
       1440: {
         items: 2,
@@ -64,30 +65,26 @@ $(document).ready(function () {
   });
 });
 
-var formButton = document.querySelector('.nav-form');
-var formPosht = document.querySelector('#form');
-var formExit =document.querySelector("#formExit");
+var formButton = document.querySelectorAll("[data-form]");
+var formPosht = document.querySelector("#form");
+var formExit = document.querySelectorAll("[data-exit]");
 
-formButton.addEventListener("click", function() {
-  unlockForm();
+formButton.forEach(function (e) {
+  e.addEventListener("click", function (e) {
+    function unlockForm() {
+      formPosht.style.display = "block";
+    }
+
+    unlockForm();
+  });
 });
 
-function unlockForm() {
-  formPosht.style.display="block";
-}
+formExit.forEach(function (e) {
+  e.addEventListener("click", function (e) {
+    function closeForm() {
+      formPosht.style.display = "none";
+    }
 
-// function unlockForm(e) {
-//   if (e.classList.contains('display-none')) {
-//     e.classList.remove("display-none");
-//   } else {
-//     e.classList.add("display-none");
-//   }
-// }
-
-// formButtonExit.addEventListener("click", function() {
-//   exitForm();
-// });
-
-// function exitForm() {
-//   formPosht.style.display="none";
-// }
+    closeForm();
+  });
+});

@@ -11,12 +11,12 @@
 .owl-carousel-lips.owl-carousel .owl-nav button.owl-next,
 .owl-carousel-milesnick.owl-carousel .owl-nav button.owl-prev,
 .owl-carousel-milesnick.owl-carousel .owl-nav button.owl-next {
-  width: 130px;
-  height: 50px;
+  width: 200px;
+  height: 80px;
   border: 2px solid black;
   background-color: #fff;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 30px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -29,6 +29,12 @@
   &:hover {
     background-color: #000000b3;
     color: #c13584;
+  }
+
+  @media (min-width: 1250px) {
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
   }
 }
 
