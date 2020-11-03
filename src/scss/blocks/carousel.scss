@@ -47,6 +47,8 @@
   margin-bottom: 10px;
 
   img {
+    width: 100%;
+    object-fit: cover;
     height: 355px;
   }
 }
