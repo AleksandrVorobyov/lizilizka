@@ -80,6 +80,7 @@
   width: 100%;
   overflow: hidden;
   transition: 0.4s linear;
+  object-fit: cover;
 
   @media (min-width: 1250px) {
     height: 400px;
@@ -112,5 +113,17 @@
 
   @media (min-width: 1250px) {
     font-size: 24px;
+  }
+}
+
+.labour-text p {
+  font-size: 33px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #000000;
+
+  @media (min-width: 1250px) {
+    font-size: 18px;
   }
 }
