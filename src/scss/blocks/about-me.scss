@@ -34,7 +34,6 @@
 
 .about-me__content-text p {
   font-size: 33px;
-  font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 400;
   color: #000000;
@@ -97,9 +96,8 @@
 
 .about-me__content .button {
   display: inline-block;
-    margin-top: 10px;
-    font-size: 40px;
-    @media (min-width: 1250px) {
+  font-size: 40px;
+  @media (min-width: 1250px) {
     font-size: 18px;
   }
 }
