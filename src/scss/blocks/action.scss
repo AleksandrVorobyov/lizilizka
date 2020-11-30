@@ -40,7 +40,7 @@
 .action__item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 1200px;
   background-color: #000000b3;
   margin-bottom: 50px;
@@ -53,8 +53,15 @@
 }
 
 .action__item-svg {
-  margin-right: 150px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 150px;
+  min-width: 90px;
+  min-height: 80px;
+  max-width: 90px;
+  max-height: 80px;
   color: #c13584;
 
   &::after {
@@ -79,12 +86,12 @@
 
 .action__item-info ul,
 .action__item-info li {
+  margin: 0;
   line-height: 1.1;
   list-style-type: none;
   font-size: 32px;
   font-weight: 400;
   color: #c13584;
-  margin-bottom: 15px;
   letter-spacing: 1.2px;
 
   @media (min-width: 1250px) {
