@@ -23,7 +23,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1250px) {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -50,7 +50,6 @@
 
   P {
     font-size: 33px;
-    font-family: "Open Sans", sans-serif;
     line-height: 1.2;
     font-weight: 400;
     color: #000000;
@@ -60,7 +59,7 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1250px) {
     margin-right: 50px;
     max-width: 40%;
     margin-top: 0;

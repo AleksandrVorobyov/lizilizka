@@ -41,7 +41,6 @@
 }
 
 .nav-logo {
-  max-width: 500px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -89,7 +88,6 @@
   display: inline-block;
   position: relative;
   font-size: 38px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -147,7 +145,7 @@
 .nav-dropdown {
   position: absolute;
   display: none;
-  bottom: -173px;
+  bottom: -170px;
   left: calc(50% - (276px / 2));
 
   @media (min-width: 1250px) {
@@ -157,7 +155,6 @@
 
 .nav-dropdown a {
   font-size: 24px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #fff;
   text-transform: uppercase;
@@ -278,7 +275,6 @@
 .header-title h2 {
   margin-bottom: 60px;
   font-size: 70px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #c13584;
   line-height: 1.4;
@@ -309,7 +305,6 @@
 
 .table p {
   font-size: 39px;
-  font-family: "Open Sans", sans-serif;
   line-height: 1.2;
   font-weight: 500;
   color: #c13584;
