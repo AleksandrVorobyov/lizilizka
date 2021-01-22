@@ -1,7 +1,9 @@
 .brow {
   position: relative;
   margin-bottom: 10px;
-  background-color: #e8dff0;
+  background: linear-gradient(rgba(232, 223, 240, .6) rgba(232, 223, 240, .6)), url('../img/bg/02.jpg') top left /cover no-repeat;
+  background-blend-mode: color;
+  background-attachment: fixed;
 }
 
 .brow-wrapper {
