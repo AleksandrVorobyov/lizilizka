@@ -133,10 +133,3 @@ sidebarLinks.forEach(function(item) {
     burger.classList.remove('burger--active');
   });
 });
-
-const sidebarBtnLinks = document.querySelector('#sidebar-btn');
-sidebarBtnLinks.addEventListener('click', function() {
-  sidebar.classList.remove('sidebar--active');
-  body.classList.remove('lock');
-  burger.classList.remove('burger--active');
-});
