@@ -116,4 +116,25 @@ formSubmit.forEach(function (e) {
   });
 });
 
+const burger = document.getElementById('header-burger');
+const sidebar = document.getElementById('sidebar');
 
+burger.addEventListener('click', function(e) {
+  e.target.classList.toggle('burger--active');
+  sidebar.classList.toggle('sidebar--active');
+  body.classList.toggle('lock');
+});
+
+const sidebarLinks = document.querySelectorAll('.sidebar__link');
+sidebarLinks.forEach(function(item) {
+  item.addEventListener('click', function() {
+    sidebar.classList.remove('sidebar--active');
+    body.classList.remove('lock');
+  });
+});
+
+const sidebarBtnLinks = document.querySelector('#sidebar-btn');
+sidebarBtnLinks.addEventListener('click', function() {
+  sidebar.classList.remove('sidebar--active');
+  body.classList.remove('lock');
+});

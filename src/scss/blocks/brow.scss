@@ -1,13 +1,19 @@
 .brow {
   position: relative;
   margin-bottom: 10px;
-  background: linear-gradient(rgba(232, 223, 240, .6) rgba(232, 223, 240, .6)), url('../img/bg/02.jpg') top left /cover no-repeat;
+  background: linear-gradient(rgba(232, 223, 240, 0.3) rgba(232, 223, 240, 0.3)),
+    url("../img/bg/02.jpg") top left / cover no-repeat;
   background-blend-mode: color;
   background-attachment: fixed;
+  
+  @media (min-width: 1250px) {
+    background: linear-gradient(rgba(232, 223, 240, 0.6) rgba(232, 223, 240, 0.6)),
+    url("../img/bg/02.jpg") top left / cover no-repeat;
+  }
 }
 
 .brow-wrapper {
-  background-color: rgba(232, 223, 240, .8);
+  background-color: rgba(232, 223, 240, 0.8);
   padding: 50px 20px;
 
   @media (min-width: 800px) {
@@ -81,5 +87,3 @@
     margin-top: 0;
   }
 }
-
-
