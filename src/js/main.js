@@ -55,7 +55,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".owl-carousel-lips").owlCarousel({
-    items: 2,
+
     loop: false,
     nav: true,
     navText: ["Назад", "Вперед"],
@@ -64,6 +64,15 @@ $(document).ready(function () {
     arrows: false,
     margin: 10,
     autoWidth: false,
+
+    responsive: {
+      1024: {
+        items: 2,
+      },
+      0: {
+        items: 1,
+      }
+    }
   });
 });
 

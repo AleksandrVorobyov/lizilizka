@@ -40,7 +40,6 @@
   padding: 10px 10px 15px;
   background-color: #fff;
   width: 500px;
-  margin-right: 50px;
   margin-bottom: 50px;
   z-index: 3;
   cursor: pointer;
@@ -60,6 +59,7 @@
   }
 
   @media (min-width: 1250px) {
+    margin-right: 50px;
     width: 440px;
   }
 

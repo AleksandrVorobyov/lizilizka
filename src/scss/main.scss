@@ -3,11 +3,7 @@
 
 // Base
 @import "./base/base";
-@import "./base/remove-mobile-support";
-
 
 // Blocks, sections, layouts
 @import "./blocks/**/*.scss";
 
-// Utils
-@import "./utils/utils";
