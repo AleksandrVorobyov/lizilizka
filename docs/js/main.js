@@ -120,15 +120,9 @@ const burger = document.getElementById('header-burger');
 const sidebar = document.getElementById('sidebar');
 
 burger.addEventListener('click', function(e) {
-  if (e.target.className == 'burger') {
-    e.target.classList.add('burger--active');
-    sidebar.classList.add('sidebar--active');
-    body.classList.add('lock');
-  } else if(e.target.className !== 'burger') {
-    e.target.classList.remove('burger--active');
-    sidebar.classList.remove('sidebar--active');
-    body.classList.remove('lock');
-  }
+  e.target.classList.toggle('burger--active');
+  sidebar.classList.toggle('sidebar--active');
+  body.classList.toggle('lock');
 });
 
 const sidebarLinks = document.querySelectorAll('.sidebar__link');

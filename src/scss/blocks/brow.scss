@@ -1,12 +1,10 @@
 .brow {
   position: relative;
-  margin-bottom: 10px;
-  background: linear-gradient(rgba(255, 255, 255, 0.1) rgba(255, 255, 255, 0.1)),
-    url("../img/bg/03.png") center center / contain no-repeat;
-  background-blend-mode: color;
-  background-attachment: fixed;
+  border-top: 10px solid #fff;
 
   @media (min-width: 720px) {
+    border: none;
+    margin-bottom: 10px;
     background: linear-gradient(
         rgba(232, 223, 240, 0.6) rgba(232, 223, 240, 0.6)
       ),
@@ -16,7 +14,7 @@
 }
 
 .brow-wrapper {
-  background-color: rgba(232, 223, 240, 0.8);
+  background-color: rgba(232, 223, 240, 0.6);
   padding: 50px 20px;
 
   @media (min-width: 800px) {
