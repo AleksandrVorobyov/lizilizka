@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".owl-carousel-brow").owlCarousel({
+  $(".brow__carousel").owlCarousel({
     items: 1,
     loop: false,
     nav: true,
@@ -39,7 +39,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".owl-carousel-milesnick").owlCarousel({
+  $(".milesnick__carousel").owlCarousel({
     items: 1,
     loop: false,
     nav: true,
@@ -48,14 +48,12 @@ $(document).ready(function () {
     stagePadding: 0,
     arrows: false,
     margin: 10,
-    autoWidth:true,
-    autoHeight:true
+    autoWidth: false,
   });
 });
 
 $(document).ready(function () {
-  $(".owl-carousel-lips").owlCarousel({
-    items: 2,
+  $(".lips__carousel").owlCarousel({
     loop: false,
     nav: true,
     navText: ["Назад", "Вперед"],
@@ -64,6 +62,15 @@ $(document).ready(function () {
     arrows: false,
     margin: 10,
     autoWidth: false,
+
+    responsive: {
+      1024: {
+        items: 2,
+      },
+      0: {
+        items: 1,
+      }
+    }
   });
 });
 
