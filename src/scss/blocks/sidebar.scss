@@ -113,6 +113,7 @@
 
 .sidebar__social {
   padding-top: 50px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,13 +124,8 @@
 
   i {
     font-size: 4em;
+    color: rgb(150, 51, 141);
   }
 }
 
-.sidebar__btn {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
