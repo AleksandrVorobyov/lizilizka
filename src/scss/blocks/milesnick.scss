@@ -8,7 +8,11 @@
 
 .milesnick-wrapper {
   background-color: rgba(232, 223, 240, .8);
-  padding: 50px 40px;
+  padding: 50px 20px;
+
+  @media (min-width: 800px) {
+    padding: 50px 40px;
+  }
 }
 
 .milesnick-title {
@@ -20,22 +24,32 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
-
+  align-items: center;
+  
   @media (min-width: 1250px) {
     justify-content: space-between;
     flex-direction: row;
   }
 }
 
-
 .milesnick__text p,
 li {
-  font-size: 33px;
+  font-size: 20px;
   line-height: 1.2;
   color: #000000;
+
+  @media (min-width: 420px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 800px) {
+    font-size: 32px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 18px;
@@ -47,10 +61,22 @@ li {
 }
 
 .milesnick__text span {
-  font-size: 33px;
-  line-height: 1.2;
+  font-size: 22px;
+  line-height: 1.3;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 420px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 32px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 20px;

@@ -8,7 +8,11 @@
 
 .lips-wrapper {
   background-color: rgba(232, 223, 240, .8);
-  padding: 50px 40px;
+  padding: 50px 20px;
+
+  @media (min-width: 800px) {
+    padding: 50px 40px;
+  }
 }
 
 .lips-title {
@@ -21,9 +25,21 @@
 
 .lips__text p,
 li {
-  font-size: 33px;
+  font-size: 20px;
   line-height: 1.2;
   color: #000000;
+
+  @media (min-width: 420px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 800px) {
+    font-size: 32px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 18px;
@@ -31,10 +47,22 @@ li {
 }
 
 .lips__text span {
-  font-size: 33px;
+  font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 420px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 32px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 20px;

@@ -41,10 +41,14 @@
 }
 
 .nav-logo {
-  margin: 100px 0;
+  margin: 50px 0 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 420px) {
+    margin: 100px 0;
+  }
 
   @media (min-width: 1024px) {
     margin-top: 0;
@@ -62,7 +66,7 @@
   color: #ffffff;
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 95px;
+  font-size: 38px;
   font-weight: 600;
   line-height: 1.1;
   text-transform: uppercase;
@@ -71,6 +75,18 @@
 
   &:hover {
     color: #c13584;
+  }
+
+  @media (min-width: 420px) {
+    font-size: 50px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 72px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 95px;
   }
 
   @media (min-width: 1250px) {
@@ -249,10 +265,22 @@
 }
 
 .header-mobile-bg {
-  height: 1650px;
+  height: 1150px;
   width: 100%;
   display: block;
-  background-image: url("../img/header/main-01.jpg");
+  background: url("../img/header/main-01.jpg") center center no-repeat;
+
+  @media (min-width: 420px) {
+    height: 1300px;
+  }
+
+  @media (min-width: 560px) {
+    height: 1500px;
+  }
+
+  @media (min-width: 720px) {
+    height: 1650px;
+  }
 
   @media (min-width: 1250px) {
     display: none;
@@ -270,13 +298,21 @@
 .header-title {
   position: absolute;
   z-index: 3;
-  top: 35%;
+  top: 20%;
   left: 50%;
   padding: 0 15px;
   transform: translateX(-50%);
   max-width: 1050px;
   width: 100%;
   text-align: center;
+
+  @media (min-width: 420px) {
+    top: 30%;
+  }
+
+  @media (min-width: 720px) {
+    top: 35%;
+  }
 
   @media (min-width: 1250px) {
     max-width: 980px;
@@ -289,7 +325,7 @@
 
 .header-title h2 {
   margin-bottom: 60px;
-  font-size: 70px;
+  font-size: 32px;
   font-weight: 600;
   color: #c13584;
   line-height: 1.4;
@@ -298,12 +334,36 @@
   span {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    font-size: 75px;
+    font-size: 38px;
     text-transform: uppercase;
+
+    @media (min-width: 420px) {
+      font-size: 48px;
+    }
+
+    @media (min-width: 560px) {
+      font-size: 58px;
+    }
+
+    @media (min-width: 720px) {
+      font-size: 75px;
+    }
 
     @media (min-width: 1250px) {
       font-size: 46px;
     }
+  }
+
+  @media (min-width: 420px) {
+    font-size: 42px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 70px;
   }
 
   @media (min-width: 1250px) {
@@ -330,10 +390,18 @@
 }
 
 .table p {
-  font-size: 39px;
+  font-size: 28px;
   line-height: 1.2;
   font-weight: 500;
   color: #c13584;
+
+  @media (min-width: 560px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 720px) {
+    font-size: 39px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 26px;
@@ -348,7 +416,13 @@
   animation: arrows 2s linear 0s infinite alternate;
 
   a {
-    color: #fff;
+    color: rgb(0, 0, 0);
+  }
+
+  @media (min-width: 420px) {
+    a {
+      color: #fff;
+    }
   }
 
   @media (min-width: 1140px) {
@@ -395,8 +469,13 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 80px;
-  height: 60px;
+  width: 50px;
+  height: 30px;
+
+  @media (min-width: 420px) {
+    width: 80px;
+    height: 60px;
+  }
 
   @media (min-width: 1024px) {
     display: none;
@@ -404,7 +483,7 @@
 
   &::before {
     position: inherit;
-    content: '';
+    content: "";
     top: 0;
     left: 0;
     background-color: #fff;
@@ -414,7 +493,7 @@
 
   &::after {
     position: inherit;
-    content: '';
+    content: "";
     bottom: 0;
     left: 0;
     background-color: #fff;
@@ -430,12 +509,12 @@
 
   span::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     background-color: #fff;
     width: 100%;
     height: 5px;
-  } 
+  }
 }

@@ -1,6 +1,7 @@
 .contact {
   position: relative;
-  background: linear-gradient(rgba(232, 223, 240, .6) rgba(232, 223, 240, .6)), url('../img/bg/02.jpg') top left /cover no-repeat;
+  background: linear-gradient(rgba(232, 223, 240, 0.6) rgba(232, 223, 240, 0.6)),
+    url("../img/bg/02.jpg") top left / cover no-repeat;
   background-blend-mode: color;
   background-attachment: fixed;
   margin-bottom: 10px;
@@ -8,8 +9,12 @@
 }
 
 .contact-wrapper {
-  background-color: rgba(232, 223, 240, .8);
-  padding: 50px 30px;
+  background-color: rgba(232, 223, 240, 0.8);
+  padding: 50px 20px;
+
+  @media (min-width: 800px) {
+    padding: 50px 30px;
+  }
 }
 
 .contact__title {
@@ -31,8 +36,8 @@
 
 .contact__form {
   position: relative;
-  height: 580px;
-  width: 500px;
+  height: 500px;
+  width: 280px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
@@ -46,6 +51,16 @@
     width: 300px;
     height: 400px;
     z-index: 2;
+  }
+
+  @media (min-width: 420px) {
+    height: 550px;
+    width: 400px;
+  }
+
+  @media (min-width: 720px) {
+    height: 580px;
+    width: 500px;
   }
 
   @media (min-width: 1250px) {
@@ -63,24 +78,39 @@
 
 .contact__form-title {
   text-align: center;
-  font-size: 33px;
+  font-size: 28px;
   font-weight: 400;
   color: #c13584;
   margin-bottom: 40px;
+
+  @media (min-width: 420px) {
+    font-size: 32px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 24px;
   }
 }
 
-.contact__form-border p,
+.contact__form-border p, .contact__form-border
 a {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 400;
   color: #c13584;
   transition: 0.4s linear;
   text-align: left;
+
+  @media (min-width: 420px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 560px) {
+    font-size: 28px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 20px;
@@ -163,15 +193,21 @@ a {
 
 .contact__map {
   width: 100%;
-  height: 500px;
+  max-width: 500px;
+  height: 350px;
   background-image: url("../img/contact/02.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 50px;
 
+  @media (min-width: 420px) {
+    height: 500px;
+  }
+
   @media (min-width: 1024px) {
     width: 920px;
+    max-width: none;
     height: 650px;
   }
 
