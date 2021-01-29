@@ -28,24 +28,31 @@
 
 .form-title {
   margin-bottom: 30px;
-  font-size: 35px;
+  font-size: 26px;
   font-weight: 600;
   color: #c13584;
   line-height: 1.4;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  @media (min-width: 480px) {
+    font-size: 35px;
+  }
 }
 
 .form-wrap {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .form-wrap input {
   display: inline-block;
+  width: 280px;
   margin-bottom: 20px;
-  font-size: 27px;
   font-weight: 600;
   color: #fff;
+  font-size: 18px;
   border: none;
   background-color: #c13584;
   padding: 10px 15px;
@@ -56,7 +63,11 @@
 
   &:hover {
     background-color: #cf5d9e;
-    border: 1px solid rgb(0, 0, 0);
+  }
+
+  @media (min-width: 480px) {
+    width: 400px;
+    font-size: 27px;
   }
 
   @media (min-width: 1250px) {
@@ -65,9 +76,13 @@
 }
 
 .form-wrap input::placeholder {
-  font-size: 27px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
+
+  @media (min-width: 480px) {
+    font-size: 27px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 23px;
@@ -79,9 +94,10 @@
 }
 
 .form-wrap textarea {
+  width: 280px;
   display: inline-block;
   margin-bottom: 20px;
-  font-size: 27px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
   border: none;
@@ -97,15 +113,24 @@
     border: 1px solid rgb(0, 0, 0);
   }
 
+  @media (min-width: 480px) {
+    width: 400px;
+    font-size: 27px;
+  }
+
   @media (min-width: 1250px) {
     font-size: 23px;
   }
 }
 
 .form-wrap textarea::placeholder {
-  font-size: 27px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
+
+  @media (min-width: 480px) {
+    font-size: 27px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 23px;
@@ -115,8 +140,10 @@
 .form-submit {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 
   input {
+    width: auto;
     cursor: pointer;
   }
 }
@@ -136,17 +163,23 @@
 .form-success {
   position: fixed;
   top: -15%;
-  left: 80px;
-  right: 80px;
+  left: 30px;
+  right: 30px;
   background-color: #000000b3;
   color: #c13584;
   text-align: center;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 16px;
   z-index: 10;
   padding: 20px;
   transition: 1.5s linear;
   transform: translateY(-150%);
+
+  @media (min-width: 5600px) {
+    font-size: 28px;
+    left: 80px;
+    right: 80px;
+  }
 
   @media (min-width: 1250px) {
     font-size: 18px;

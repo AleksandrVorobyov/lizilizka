@@ -120,9 +120,15 @@ const burger = document.getElementById('header-burger');
 const sidebar = document.getElementById('sidebar');
 
 burger.addEventListener('click', function(e) {
-  e.target.classList.toggle('burger--active');
-  sidebar.classList.toggle('sidebar--active');
-  body.classList.toggle('lock');
+  if (e.target.className == 'burger') {
+    e.target.classList.add('burger--active');
+    sidebar.classList.add('sidebar--active');
+    body.classList.add('lock');
+  } else if(e.target.className !== 'burger') {
+    e.target.classList.remove('burger--active');
+    sidebar.classList.remove('sidebar--active');
+    body.classList.remove('lock');
+  }
 });
 
 const sidebarLinks = document.querySelectorAll('.sidebar__link');
@@ -130,6 +136,7 @@ sidebarLinks.forEach(function(item) {
   item.addEventListener('click', function() {
     sidebar.classList.remove('sidebar--active');
     body.classList.remove('lock');
+    burger.classList.remove('burger--active');
   });
 });
 
@@ -137,4 +144,5 @@ const sidebarBtnLinks = document.querySelector('#sidebar-btn');
 sidebarBtnLinks.addEventListener('click', function() {
   sidebar.classList.remove('sidebar--active');
   body.classList.remove('lock');
+  burger.classList.remove('burger--active');
 });

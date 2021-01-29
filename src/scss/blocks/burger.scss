@@ -1,14 +1,17 @@
 .burger {
   position: fixed;
+  padding: 14px;
   top: 20px;
   right: 20px;
-  width: 60px;
+  width: 50px;
   height: 40px;
   z-index: 500;
   background: transparent;
   outline: none;
   border: none;
   cursor: pointer;
+  border-radius: 12px;
+  background-color: rgb(193, 53, 132);
 
   @media (min-width: 1024px) {
     display: none;
@@ -17,22 +20,22 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: 6px;
+    left: 5px;
     background-color: #fff;
-    width: 100%;
-    height: 5px;
+    width: calc(100% - 10px);
+    height: 4px;
     transition: all 0.5s linear;
   }
 
   &::after {
     position: absolute;
     content: "";
-    bottom: 0;
-    left: 0;
+    bottom: 6px;
+    left: 5px;
     background-color: #fff;
-    width: 100%;
-    height: 5px;
+    width: calc(100% - 10px);
+    height: 4px;
     transition: all 0.5s linear;
   }
 
@@ -46,11 +49,11 @@
     position: absolute;
     content: "";
     top: 50%;
-    left: 0;
+    left: 5px;
     transform: translateY(-50%);
     background-color: #fff;
-    width: 100%;
-    height: 5px;
+    width: calc(100% - 10px);
+    height: 4px;
     transition: all 0.5s linear;
   }
 }
