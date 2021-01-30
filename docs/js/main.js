@@ -74,47 +74,7 @@ $(document).ready(function () {
   });
 });
 
-var formButton = document.querySelectorAll("[data-form]");
-var formPosht = document.querySelector("#form");
-var formExit = document.querySelectorAll("[data-exit]");
-var formSubmit = document.querySelectorAll("[data-submit]");
-var success = document.querySelector('.form-success');
-var body = document.querySelector('body');
-
-formButton.forEach(function (e) {
-  e.addEventListener("click", function (e) {
-    function unlockForm() {
-      formPosht.style.display = "block";
-      body.classList.add('lock');
-    }
-
-    unlockForm();
-  });
-});
-
-formExit.forEach(function (e) {
-  e.addEventListener("click", function (e) {
-    function closeForm() {
-      formPosht.style.display = "none";
-      body.classList.remove('lock');
-    }
-
-    closeForm();
-  });
-});
-
-formSubmit.forEach(function (e) {
-  e.addEventListener("click", function (e) {
-    function closeForm() {
-      formPosht.style.display = "none";
-      success.classList.add('form-success--active');
-      setTimeout(() => success.classList.remove('form-success--active'), 5000);
-      body.classList.remove('lock');
-    }
-
-    closeForm();
-  });
-});
+const body = document.querySelector('body');
 
 const burger = document.getElementById('header-burger');
 const sidebar = document.getElementById('sidebar');

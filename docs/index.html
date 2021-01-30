@@ -336,12 +336,12 @@
 					<h2>Напишите нам:</h2>
 				</div>
 				<div class="form-wrap">
-					<input type="name" placeholder="Имя и Фамилия" />
-					<input type="email" placeholder="Email" />
-					<input type="tel" placeholder="Номер телефона" />
-					<textarea id="textarea" name="" cols="30" rows="5" placeholder="Оставьте свой коментарий"></textarea>
+					<input type="name" placeholder="Имя и Фамилия" id="form-name" />
+					<input type="email" placeholder="Email" id="form-email" />
+					<input type="tel" placeholder="Номер телефона" id="form-tel" />
+					<textarea name="form-message" cols="30" rows="5" placeholder="Оставьте свой коментарий" id="form-message"></textarea>
 					<div class="form-submit">
-						<input class="input-submit" type="submit" form="form" data-submit="data-submit" />
+						<input class="input-submit" type="submit" form="form" id="form-submit" />
 						<input type="reset" />
 					</div>
 				</div>
@@ -356,6 +356,9 @@
 	<script src="./js/owl.carousel.min.js"></script><!-- endbuild -->
 	<!-- build:js3 js/main.js -->
 	<script src="./js/main.js"></script>
+	<!-- endbuild -->
+	<!-- build:js3 js/form.js -->
+	<script src="./js/form.js"></script>
 	<!-- endbuild -->
 	<!-- build:js4 js/scroll.js -->
 	<script src="./js/scroll.js"></script><!-- endbuild -->

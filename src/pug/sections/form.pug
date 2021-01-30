@@ -4,12 +4,12 @@ section.form.display-none#form
             .form-title
                 h2 Напишите нам:
             .form-wrap
-                input(type="name" placeholder="Имя и Фамилия")
-                input(type="email" placeholder="Email")
-                input(type="tel" placeholder="Номер телефона")
-                textarea#textarea(name="", cols="30", rows="5" placeholder="Оставьте свой коментарий")
+                input(type="name" placeholder="Имя и Фамилия" id="form-name")
+                input(type="email" placeholder="Email" id="form-email")
+                input(type="tel" placeholder="Номер телефона" id="form-tel")
+                textarea(name="form-message", cols="30", rows="5" placeholder="Оставьте свой коментарий" id="form-message")
                 .form-submit
-                    input(type="submit" class="input-submit" form="form" data-submit)
+                    input(type="submit" class="input-submit" form="form" id="form-submit")
                     input(type="reset")
             .form-exit#formExit
                 <i class="fa fa-times fa-3x" aria-hidden="true" data-exit></i>
